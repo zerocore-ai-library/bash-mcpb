@@ -32,12 +32,6 @@ jobs:
           - target: linux-arm64
             runs_on: ubuntu-24.04-arm
             rust_target: aarch64-unknown-linux-gnu
-          - target: win32-x86_64
-            runs_on: windows-2022
-            rust_target: x86_64-pc-windows-msvc
-          - target: win32-arm64
-            runs_on: windows-11-arm
-            rust_target: aarch64-pc-windows-msvc
     steps:
       - name: Checkout
         uses: actions/checkout@v4
