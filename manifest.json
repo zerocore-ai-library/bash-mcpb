@@ -25,7 +25,10 @@
     }
   ],
   "compatibility": {
-    "platforms": ["darwin", "linux"]
+    "platforms": [
+      "darwin",
+      "linux"
+    ]
   },
   "_meta": {
     "store.tool.mcpb": {
@@ -33,7 +36,12 @@
         "build": "cargo build --release"
       },
       "compatibility": {
-        "platforms": ["darwin-arm64", "darwin-x86_64", "linux-arm64", "linux-x86_64"]
+        "platforms": [
+          "darwin-arm64",
+          "darwin-x86_64",
+          "linux-arm64",
+          "linux-x86_64"
+        ]
       },
       "static_responses": {
         "tools/list": {
@@ -63,7 +71,9 @@
                     "description": "Working directory for command execution."
                   }
                 },
-                "required": ["command"]
+                "required": [
+                  "command"
+                ]
               },
               "output_schema": {
                 "type": "object",
@@ -107,5 +117,6 @@
         }
       }
     }
-  }
+  },
+  "documentation": "https://github.com/zerocore-ai-library/bash-mcpb"
 }
