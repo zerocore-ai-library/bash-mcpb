@@ -11,15 +11,11 @@
   },
   "server": {
     "type": "binary",
-    "entry_point": "dist/bash-linux-x86_64",
+    "entry_point": "dist/bash",
     "mcp_config": {
-      "command": "${__dirname}/dist/bash-linux-x86_64",
+      "command": "${__dirname}/dist/bash",
       "args": [],
-      "env": {},
-      "platform_overrides": {
-        "darwin": { "command": "${__dirname}/dist/bash-darwin-arm64" },
-        "linux": { "command": "${__dirname}/dist/bash-linux-x86_64" }
-      }
+      "env": {}
     }
   },
   "tools": [
@@ -28,23 +24,10 @@
       "description": "Execute a shell command and return its output"
     }
   ],
-  "compatibility": {
-    "platforms": ["darwin", "linux"]
-  },
   "_meta": {
     "store.tool.mcpb": {
       "scripts": {
         "build": "cargo build --release"
-      },
-      "mcp_config": {
-        "platform_overrides": {
-          "darwin-arm64": { "command": "${__dirname}/dist/bash-darwin-arm64" },
-          "linux-arm64": { "command": "${__dirname}/dist/bash-linux-arm64" },
-          "linux-x86_64": { "command": "${__dirname}/dist/bash-linux-x86_64" }
-        }
-      },
-      "compatibility": {
-        "platforms": ["darwin-arm64", "linux-arm64", "linux-x86_64"]
       },
       "static_responses": {
         "tools/list": {
