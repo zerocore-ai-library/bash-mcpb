@@ -24,10 +24,16 @@
       "description": "Execute a shell command and return its output"
     }
   ],
+  "compatibility": {
+    "platforms": ["darwin", "linux"]
+  },
   "_meta": {
     "store.tool.mcpb": {
       "scripts": {
         "build": "cargo build --release"
+      },
+      "compatibility": {
+        "platforms": ["darwin-arm64", "darwin-x86_64", "linux-arm64", "linux-x86_64"]
       },
       "static_responses": {
         "tools/list": {
