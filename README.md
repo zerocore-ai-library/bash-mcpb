@@ -4,35 +4,28 @@ Shell command execution for AI agents. Based on [Claude Code's Bash tool design]
 
 ## Setup
 
-### Using tool CLI (Recommended)
+### Using tool CLI
 
-Install from https://github.com/zerocore-ai/tool-cli
+Install the CLI from https://github.com/zerocore-ai/tool-cli
 
 ```bash
-# Build the tool
-tool run build /path/to/bash
+# Install from tool.store
+tool install library/bash
 ```
 
 ```bash
-# Validate the manifest
-tool validate /path/to/bash
+# View available tools
+tool info library/bash
 ```
 
 ```bash
-# Test the tool
-tool call /path/to/bash -m exec -p command="echo hello"
+# Execute a command
+tool call library/bash -m exec -p command="echo hello"
 ```
 
-### Manual Build
-
 ```bash
-cargo build --release
-```
-
-## Testing
-
-```bash
-cargo test
+# Run a command with timeout
+tool call library/bash -m exec -p command="sleep 5" -p timeout_ms=10000
 ```
 
 ## Tools
