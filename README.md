@@ -54,4 +54,4 @@ Execute a shell command and return its output.
 
 ## License
 
-MIT
+Apache-2.0
