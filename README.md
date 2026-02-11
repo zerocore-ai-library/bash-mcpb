@@ -4,7 +4,7 @@ Shell command execution for AI agents. Based on [Claude Code's Bash tool design]
 
 ## Tools
 
-### `bash__exec`
+### `exec`
 
 Execute a shell command and return its output.
 
@@ -44,7 +44,7 @@ tool validate /path/to/bash
 
 ```bash
 # Test the tool
-tool call /path/to/bash -m bash__exec -p command="echo hello"
+tool call /path/to/bash -m exec -p command="echo hello"
 ```
 
 ### Manual Build

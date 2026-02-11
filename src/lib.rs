@@ -195,7 +195,7 @@ fn validate_working_directory(path: &str) -> Result<(), BashError> {
 impl Server {
     /// Execute a shell command.
     #[tool(
-        name = "bash__exec",
+        name = "exec",
         description = "Execute a shell command and return its output."
     )]
     async fn exec(&self, params: Parameters<ExecInput>) -> Result<Json<ExecOutput>, McpError> {

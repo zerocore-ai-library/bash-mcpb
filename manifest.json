@@ -20,7 +20,7 @@
   },
   "tools": [
     {
-      "name": "bash__exec",
+      "name": "exec",
       "description": "Execute a shell command and return its output"
     }
   ],
@@ -33,7 +33,7 @@
   "_meta": {
     "store.tool.mcpb": {
       "scripts": {
-        "build": "cargo build --release"
+        "build": "cargo build --release && mkdir -p dist && cp target/release/bash dist/"
       },
       "compatibility": {
         "platforms": [
@@ -47,7 +47,7 @@
         "tools/list": {
           "tools": [
             {
-              "name": "bash__exec",
+              "name": "exec",
               "description": "Execute a shell command and return its output",
               "input_schema": {
                 "type": "object",
